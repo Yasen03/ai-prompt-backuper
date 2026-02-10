@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Backuper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title-row">
+        <img src="../icons/icon48.png" alt="Logo" class="logo">
+        <h1>Prompt Backuper</h1>
+      </div>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="toggle-backup" checked>
+          <span class="slider round"></span>
+        </label>
+        <span id="status-text">Enabled</span>
+      </div>
+    </header>
+    
+    <main>
+      <h2>Recent History</h2>
+      <ul id="history-list" class="history-list">
+        <li class="empty-state">No history yet.</li>
+      </ul>
+    </main>
+    
+    <footer>
+      <button id="clear-history" class="text-btn">Clear History</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
